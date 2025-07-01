@@ -1,18 +1,58 @@
-## Getting Started
+# 🧠 Práctica sobre Sets en Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Carrera:** Computación  
+**Asignatura:** Estructura de Datos  
+**Práctica:** Conjuntos (`Set`)  
+**Estudiante:** *Erika Collaguazo*  
+**Docente:** Ing. Pablo Torres  
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🎯 Objetivos
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Comprender el funcionamiento de las implementaciones de `Set` en Java.
+- Comparar el comportamiento y el ordenamiento de `HashSet`, `LinkedHashSet`, `TreeSet` y `TreeSet` con `Comparator`.
+- Identificar cómo se eliminan duplicados y cómo se conserva el orden (o no) en cada tipo de conjunto.
+- Aplicar comparadores personalizados para ordenar elementos con criterios específicos.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🧪 Descripción de la práctica
 
-## Dependency Management
+La práctica consiste en implementar diferentes tipos de conjuntos en Java (`Set`) para observar sus características:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Tipos de conjuntos utilizados:
+
+1. **HashSet:**  
+   No garantiza orden. No permite duplicados.
+
+2. **LinkedHashSet:**  
+   Mantiene el orden de inserción. No permite duplicados.
+
+3. **TreeSet:**  
+   Ordena los elementos de forma natural (alfabética). No permite duplicados.
+
+4. **TreeSet con Comparator:**  
+   Ordena según un criterio personalizado, en este caso, **por longitud de la cadena**.
+
+5. **TreeSet con Comparator Reverso:**  
+   Similar al anterior, pero ordena de **mayor a menor longitud** (orden inverso).
+
+---
+
+## 🧩 Implementación
+
+Se definió una clase `Sets` que contiene los métodos:
+
+- `construirHashSet()`
+- `construirLinkedHashSet()`
+- `construirTreeSet()`
+- `construirTreeSetConComparador()`
+- `construirTreeSetConComparadorReverso()`
+
+Y una clase `App` con métodos para imprimir los conjuntos y observar diferencias en la salida.
+
+---
+
+## 💻 Grafica de salida esperada
+![Resultado De la Ejecuccion](TerminalSets.png)
